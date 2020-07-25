@@ -38,3 +38,39 @@ button {
     background-image: url("../img/transparent_lab_001.png");
     border: #006d0f 1px solid;
 }
+
+.lab-items {
+    position: relative;
+}
+
+#hazmat {
+    border: #ccff00 3px solid;
+    left: 590px;
+    top: -300px;
+    height: 150px;
+    width: 80px;
+}
+
+#notebook {
+    border: red 3px solid;
+    height: 10px;
+    width: 50px;
+    left: 50px;
+    top: -300px;
+}
+
+#isopropyl-alc {
+    border: aqua 3px solid;
+    left: 675px;
+    top: -375px;
+    height: 60px;
+    width: 25px;
+}
+
+#ThO2 {
+    height: 30px;
+    width: 50px;
+    border: darkmagenta 2px solid;
+    position: relative;
+    left: 400px;
+}
