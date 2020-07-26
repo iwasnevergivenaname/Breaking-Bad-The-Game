@@ -15,11 +15,13 @@ let isHazmatWorn = false;
 let isNotebookOpen = false;
 let isPoisonOpen = false;
 let isRicin = false;
+let chemicalsClicked = [];
 
-function Chemicals(name, isClicked) {
+class Chemicals {
+    constructor(name, isClicked) {
     this.name = name;
-    isClicked = false;
-}
+    this.isClicked = false;
+}};
 
 let chem1 = new Chemicals("chemical one");
 let chem2 = new Chemicals("chemical two");
@@ -80,14 +82,6 @@ ricin.addEventListener("click", function () {
     checkForSafeCombo(chemicalsClicked);
     alert(`you found the ricin`);
 })
-//
-// class Chemicals {
-//     constructor(name, isClicked) {
-//         name: "name";
-//         isClicked: false;
-//     }
-//
-// }
 
 // check if hazmat is worn, if false, you die
 function safetyCheck() {
@@ -98,7 +92,7 @@ function safetyCheck() {
     }
 }
 
-let chemicalsClicked = [];
+
 
 // check if right combo of chemicals
 function checkForSafeCombo(...chemicals) {
