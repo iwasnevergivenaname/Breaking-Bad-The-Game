@@ -75,6 +75,9 @@ poison.addEventListener("click", function () {
 });
 ricin.addEventListener("click", function () {
     isRicin = true;
+    chemicalsClicked.push(isRicin);
+    console.log(chemicalsClicked);
+    checkForSafeCombo(chemicalsClicked);
     console.log(`you found the ricin ${isRicin}`);
 })
 //
@@ -89,7 +92,7 @@ ricin.addEventListener("click", function () {
 // check if hazmat is worn, if false, you die
 function safetyCheck() {
     if (isHazmatWorn) {
-        console.log("you're alive");
+        console.log("and you're alive");
     } else {
         console.log("but you have died from not wearing protection");
     }
@@ -102,16 +105,18 @@ function checkForSafeCombo(...chemicals) {
     for (let i = 0; i < chemicals.length; i++) {
         if (chem1.isClicked && chem2.isClicked && chem3.isClicked && chem4.isClicked && !isPoisonOpen) {
             console.log("you made meth!");
+            if (isRicin) {
+                console.log("you killed gus fringe!");
+            }
             return safetyCheck();
         } else if (isPoisonOpen) {
-            console.log("you ahve died");
+            console.log("you have died");
         } else {
             console.log("still cooking");
         }
     }
 }
 
-console.log(checkForSafeCombo(chemicalsClicked));
 
 // checkForSafeCombo(chemicals);
 // console.log(chemicalsClicked);
