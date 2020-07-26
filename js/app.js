@@ -33,15 +33,15 @@ let chem4 = new Chemicals("chemical four");
 // });
 hazmatSuit.addEventListener("click", function () {
     isHazmatWorn = true;
-    console.log(`you clicked the suit ${isHazmatWorn}`);
+    alert(`you clicked the suit`);
 });
 notebook.addEventListener("click", function () {
     isNotebookOpen = true;
-    console.log(`you clicked the notebook ${isNotebookOpen}`);
+    alert(`you clicked the notebook`);
 });
 isoAlc.addEventListener("click", function () {
     isClicked = true;
-    console.log("you clicked the isopropyl alcohol");
+    alert("you clicked the isopropyl alcohol");
 });
 chemOne.addEventListener("click", function () {
     chem1.isClicked = true;
@@ -78,7 +78,7 @@ ricin.addEventListener("click", function () {
     chemicalsClicked.push(isRicin);
     console.log(chemicalsClicked);
     checkForSafeCombo(chemicalsClicked);
-    console.log(`you found the ricin ${isRicin}`);
+    alert(`you found the ricin`);
 })
 //
 // class Chemicals {
@@ -92,9 +92,9 @@ ricin.addEventListener("click", function () {
 // check if hazmat is worn, if false, you die
 function safetyCheck() {
     if (isHazmatWorn) {
-        console.log("and you're alive");
+        alert("and you're alive");
     } else {
-        console.log("but you have died from not wearing protection");
+        alert("but you have died from not wearing protection");
     }
 }
 
@@ -104,13 +104,13 @@ let chemicalsClicked = [];
 function checkForSafeCombo(...chemicals) {
     for (let i = 0; i < chemicals.length; i++) {
         if (chem1.isClicked && chem2.isClicked && chem3.isClicked && chem4.isClicked && !isPoisonOpen) {
-            console.log("you made meth!");
+            alert("you made meth!");
             if (isRicin) {
-                console.log("you killed gus fringe!");
+                alert("you killed gus fring!");
             }
             return safetyCheck();
         } else if (isPoisonOpen) {
-            console.log("you have died");
+            alert("you have died");
         } else {
             console.log("still cooking");
         }
