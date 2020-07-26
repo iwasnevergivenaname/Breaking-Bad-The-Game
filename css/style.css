@@ -25,6 +25,8 @@ button {
 }
 
 #abq {
+    position: relative;
+    left: 150px;
     border: 2px red solid;
     margin-top: 0;
     width: 1500px;
@@ -35,7 +37,6 @@ button {
     width: 771px;
     height: 350px;
     margin: 450px 400px 0px 400px;
-    background-image: url("../img/transparent_lab_001.png");
     border: #006d0f 1px solid;
 }
 
@@ -53,10 +54,10 @@ button {
 
 #notebook {
     border: red 3px solid;
-    height: 10px;
-    width: 50px;
+    height: 5px;
+    width: 40px;
     left: 50px;
-    top: -300px;
+    top: -295px;
 }
 
 #isopropyl-alc {
@@ -67,10 +68,51 @@ button {
     width: 25px;
 }
 
-#ThO2 {
+#chem-one {
     height: 30px;
-    width: 50px;
+    width: 30px;
     border: darkmagenta 2px solid;
     position: relative;
-    left: 400px;
+    left: 405px;
+    top: -410px;
+}
+
+#chem-two {
+    height: 45px;
+    width: 50px;
+    border: #218731 2px solid;
+    top: -360px;
+    left: 180px;
+}
+
+#chem-three {
+    border: lightpink 2px solid;
+    height: 20px;
+    width: 18px;
+    top: -485px;
+    left: 450px;
+}
+
+#chem-four {
+    border: deeppink 2px solid;
+    height: 25px;
+    width: 25px;
+    left: 550px;
+    top: -515px;
+}
+
+#poison {
+    border: #4da7ff 2px solid;
+    height: 30px;
+    width: 20px;
+    left: 250px;
+    top: -545px;
+}
+
+#ricin {
+    border: coral 2px solid;
+    height: 10px;
+    width: 10px;
+    top: -560px;
+    left: 315px;
 }
