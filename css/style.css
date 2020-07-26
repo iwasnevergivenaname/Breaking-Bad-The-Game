@@ -31,13 +31,15 @@ button {
     margin-top: 0;
     width: 1500px;
     height: 800px;
+    background-color: grey;
 }
 
 #lab {
     width: 771px;
     height: 350px;
-    margin: 450px 400px 0px 400px;
-    border: #006d0f 1px solid;
+    margin: 450px 400px 0 400px;
+    border: #262626 1px solid;
+    background-color: white;
 }
 
 .lab-items {
