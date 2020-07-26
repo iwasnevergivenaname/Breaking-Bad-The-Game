@@ -35,15 +35,15 @@ let chem4 = new Chemicals("chemical four");
 // });
 hazmatSuit.addEventListener("click", function () {
     isHazmatWorn = true;
-    alert(`you clicked the suit`);
+    alert(`you're wearing the hazmat suit`);
 });
 notebook.addEventListener("click", function () {
     isNotebookOpen = true;
-    alert(`you clicked the notebook`);
+    alert(`you found the notebook`);
 });
 isoAlc.addEventListener("click", function () {
     isClicked = true;
-    alert("you clicked the isopropyl alcohol");
+    alert("isopropyl alcohol");
 });
 chemOne.addEventListener("click", function () {
     chem1.isClicked = true;
@@ -86,41 +86,25 @@ ricin.addEventListener("click", function () {
 // check if hazmat is worn, if false, you die
 function safetyCheck() {
     if (isHazmatWorn) {
-        alert("and you're alive");
+        alert("you have successfully made meth and you're alive");
     } else {
-        alert("but you have died from not wearing protection");
+        alert("you were successful in making product but you have died from not wearing protection");
     }
 }
-
-
 
 // check if right combo of chemicals
 function checkForSafeCombo(...chemicals) {
     for (let i = 0; i < chemicals.length; i++) {
         if (chem1.isClicked && chem2.isClicked && chem3.isClicked && chem4.isClicked && !isPoisonOpen) {
-            alert("you made meth!");
             if (isRicin) {
-                alert("you killed gus fring!");
+                alert("you killed gus fring with ricin!");
             }
             return safetyCheck();
         } else if (isPoisonOpen) {
-            alert("you have died");
+            alert("you exposed a dangerous chemical to air, causing an explosion. you have died");
         } else {
             console.log("still cooking");
         }
     }
 }
-
-
-// checkForSafeCombo(chemicals);
-// console.log(chemicalsClicked);
-
-// combining chemicals that have been clicked to create product
-//     function toCook(...chemicals) {
-//         let chemicalsPicked = [];
-//         for (let )
-//             }
-
-
-
 
