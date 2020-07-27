@@ -130,31 +130,35 @@ button {
     z-index: 1; /* Sit on top */
     left: 50%;
     top: 50%;
-    width: 145px; /* Full width */
-    height: 450px; /* Full height */
+    width: 200px; /* Full width */
+    height: 600px; /* Full height */
     /*overflow: auto; !* Enable scroll if needed *!*/
-    /*background-image: url("../img/phone.png");*/
+    background-image: url("../img/hazamtsuitwalt.png");
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-/* Modal Content/Box */
-.modal-content {
-    /*background-color: #db1a1a;*/
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    /*border: 1px solid #d92323;*/
-    width: 80px; /* Could be more or less, depending on screen size */
-    height: 80px;
-}
+/*#hazmat-suit {*/
+/*    !*display: none; !* Hidden by default *!*!*/
+/*    position: fixed; !* Stay in place *!*/
+/*    z-index: 1; !* Sit on top *!*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    width: 10%; !* Full width *!*/
+/*    height: 10%; !* Full height *!*/
+/*    overflow: hidden; !* Enable scroll if needed *!*/
+/*    background-image: url("../img/hazamtsuitwalt.png");*/
+/*    background-repeat: no-repeat;*/
+/*}*/
 
 /* Modal Content/Box */
 .poison-content {
     /*background-color: #db1a1a;*/
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    /*border: 1px solid #d92323;*/
-    width: 80px; /* Could be more or less, depending on screen size */
-    height: 80px;
+    /*margin: 15% auto; !* 15% from the top and centered *!*/
+    /*padding: 20px;*/
+    /*!*border: 1px solid #d92323;*!*/
+    /*width: 80px; !* Could be more or less, depending on screen size *!*/
+    /*height: 80px;*/
 }
 
 

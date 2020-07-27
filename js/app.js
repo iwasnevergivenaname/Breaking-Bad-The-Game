@@ -133,22 +133,47 @@ function checkForSafeCombo(...chemicals) {
 
 // When the user clicks anywhere outside of the modal, close it
 window.addEventListener("click", function(e) {
-    if (e.target == modal) {
-        modal.style.display = "none";
-        console.log("webpage click to close");
-    } else if (e.target == suitModal) {
-        suitModal.style.display = "none";
-    } else if (e.target == poisonEndGame) {
-        poisonEndGame.style.display = "none";
-    } else if (e.target == successfulEndgame) {
-        successfulEndgame.style.display = "none";
-    } else if (e.target == killGus){
-        killGus.style.display = "none";
-    } else if (e.target == noSuit) {
-        noSuit.style.display = "none";
-    } else {
-        console.log("s;ljbv");
+    switch (e.target) {
+        case modal:
+            modal.style.display = "none";
+            break;
+        case suitModal:
+            suitModal.style.display = "none";
+            break;
+        case poisonEndGame:
+            poisonEndGame.style.display = "none";
+            break;
+        // case successfulEndgame:
+        //     successfulEndgame.style.display = "none";
+        //     break;
+        // case killGus:
+        //     killGus.style.display = "none";
+        //     break;
+        // case noSuit:
+        //     noSuit.style.display = "none";
+        //     break;
+        default:
+            console.log("not working");
+
     }
 })
+
+    //
+    // if (e.target == modal) {
+    //     modal.style.display = "none";
+    //     console.log("webpage click to close");
+    // } else if (e.target == suitModal) {
+    //     suitModal.style.display = "none";
+    //     console.log("polease work");
+    // } else if (e.target == poisonEndGame) {
+    //     poisonEndGame.style.display = "none";
+    // } else if (e.target == successfulEndgame) {
+    //     successfulEndgame.style.display = "none";
+    // } else if (e.target == killGus){
+    //     killGus.style.display = "none";
+    // } else if (e.target == noSuit) {
+    //     noSuit.style.display = "none";
+    // } else {
+    //     console.log("s;ljbv");
 
 
