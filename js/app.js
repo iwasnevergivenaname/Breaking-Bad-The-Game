@@ -1,5 +1,12 @@
+// checks for used items
+let isHazmatWorn = false;
+let isNotebookOpen = false;
+let isPoisonOpen = false;
+let isRicin = false;
+let chemicalsClicked = [];
+
 // connecting elements from the HTML to JS variables
-const h1 = document.querySelector("h1");
+const headline = document.getElementById("headline");
 const hazmatSuit = document.getElementById("hazmat");
 const notebook = document.getElementById("notebook");
 const isoAlc = document.getElementById("isopropyl-alc");
@@ -10,19 +17,14 @@ const chemFour = document.getElementById("chem-four");
 const poison = document.getElementById("poison");
 const ricin = document.getElementById("ricin");
 
-// checks for used items
-let isHazmatWorn = false;
-let isNotebookOpen = false;
-let isPoisonOpen = false;
-let isRicin = false;
-let chemicalsClicked = [];
-
+// chemical class
 class Chemicals {
     constructor(name, isClicked) {
     this.name = name;
     this.isClicked = false;
-}};
+}}
 
+// individual chemicals
 let chem1 = new Chemicals("chemical one");
 let chem2 = new Chemicals("chemical two");
 let chem3 = new Chemicals("chemical three");
@@ -30,9 +32,9 @@ let chem4 = new Chemicals("chemical four");
 
 
 // connecting my DOM elements to click functions
-// h1.addEventListener("click", function() {
-//     console.log("it was clicked");
-// });
+headline.addEventListener("click", function () {
+    alert(`head`);
+});
 hazmatSuit.addEventListener("click", function () {
     isHazmatWorn = true;
     alert(`you're wearing the hazmat suit`);
@@ -108,3 +110,31 @@ function checkForSafeCombo(...chemicals) {
     }
 }
 
+
+// Get the modal
+const modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+let btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+const close = document.querySelector(".close");
+
+// When the user clicks on the button, open the modal
+btn.addEventListener("click", function(){
+    modal.style.display = "block";
+    console.log("button click");
+});
+
+// When the user clicks on <span> (x), close the modal
+close.addEventListener("click",  function() {
+    modal.style.display = "none";
+    console.log("close");
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
