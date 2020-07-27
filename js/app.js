@@ -127,14 +127,17 @@ btn.addEventListener("click", function(){
 });
 
 // When the user clicks on <span> (x), close the modal
-close.addEventListener("click",  function() {
-    modal.style.display = "none";
-    console.log("close");
-});
+// close.addEventListener("click",  function() {
+//     modal.style.display = "none";
+//     console.log("close");
+// });
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
+window.addEventListener("click", function(e) {
+    if (e.target == modal) {
         modal.style.display = "none";
+        console.log("webpage click to close")
     }
-}
+})
+
+
