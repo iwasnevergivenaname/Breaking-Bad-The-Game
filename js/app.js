@@ -143,15 +143,15 @@ window.addEventListener("click", function(e) {
         case poisonEndGame:
             poisonEndGame.style.display = "none";
             break;
-        // case successfulEndgame:
-        //     successfulEndgame.style.display = "none";
-        //     break;
-        // case killGus:
-        //     killGus.style.display = "none";
-        //     break;
-        // case noSuit:
-        //     noSuit.style.display = "none";
-        //     break;
+        case successfulEndgame:
+            successfulEndgame.style.display = "none";
+            break;
+        case killGus:
+            killGus.style.display = "none";
+            break;
+        case noSuit:
+            noSuit.style.display = "none";
+            break;
         default:
             console.log("not working");
 
