@@ -2,11 +2,12 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: #218731;
 }
 
 h1 {
     text-align: center;
-    color: hotpink;
+    color: #093405;
 }
 
 #how-to {
@@ -20,29 +21,30 @@ button {
     width: 50px;
 }
 
-#board {
 
-}
-
+/* game board */
 #abq {
     position: relative;
-    left: 150px;
+    /*left: 150px;*/
     border: 2px red solid;
-    margin-top: 0;
-    width: 1500px;
-    height: 800px;
-    /*background-color: grey;*/
+    margin: 0 auto;
+    width: 1050px;
+    height: 900px;
+    background-color: grey;
 }
 
-#lab {
+#lab-img {
     position: relative;
-    width: 771px;
-    height: 350px;
+    /*width: 771px;*/
+    height: 500px;
     margin: 450px 400px 0 400px;
     border: #262626 1px solid;
     background-color: white;
-    top: -800px;
+    left: -401px;
+    top: -50px;
 }
+
+/* clickable items */
 
 .lab-items {
     position: relative;
@@ -50,9 +52,9 @@ button {
 
 #hazmat {
     border: #ccff00 3px solid;
-    left: 590px;
-    top: -300px;
-    height: 150px;
+    left: 840px;
+    top: -500px;
+    height: 210px;
     width: 80px;
 }
 
@@ -60,70 +62,69 @@ button {
     border: red 3px solid;
     height: 5px;
     width: 40px;
-    left: 50px;
-    top: -295px;
+    left: 160px;
+    top: -487px;
 }
 
 #isopropyl-alc {
     border: aqua 3px solid;
-    left: 675px;
-    top: -375px;
+    left: 925px;
+    top: -575px;
     height: 60px;
     width: 25px;
 }
 
 #chem-one {
     height: 30px;
-    width: 30px;
+    width: 18px;
     border: darkmagenta 2px solid;
     position: relative;
     left: 405px;
-    top: -410px;
+    top: -610px;
 }
 
 #chem-two {
-    height: 45px;
-    width: 50px;
+    height: 60px;
+    width: 63px;
     border: #218731 2px solid;
-    top: -360px;
-    left: 180px;
+    top: -540px;
+    left: 368px;
 }
 
 #chem-three {
     border: lightpink 2px solid;
-    height: 20px;
+    height: 25px;
     width: 18px;
-    top: -485px;
-    left: 450px;
+    top: -690px;
+    left: 650px;
 }
 
 #chem-four {
     border: deeppink 2px solid;
     height: 25px;
-    width: 25px;
-    left: 550px;
-    top: -515px;
+    width: 12px;
+    left: 740px;
+    top: -790px;
 }
 
 #poison {
     border: #4da7ff 2px solid;
-    height: 30px;
-    width: 20px;
-    left: 250px;
-    top: -545px;
+    height: 15px;
+    width: 18px;
+    left: 123px;
+    top: -722px;
 }
 
 #ricin {
     border: coral 2px solid;
     height: 10px;
-    width: 10px;
-    top: -560px;
-    left: 315px;
+    width: 12px;
+    top: -757px;
+    left: 481px;
 }
 
-
-/* The Modal (background) */
-.modal {
+/* modal pop ups */
+.close-up-modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -132,13 +133,9 @@ button {
     width: 145px; /* Full width */
     height: 450px; /* Full height */
     /*overflow: auto; !* Enable scroll if needed *!*/
-    background-image: url("../img/phone.png");
+    /*background-image: url("../img/phone.png");*/
     background-repeat: no-repeat;
 }
-
-/*    background-color: rgb(206, 30, 30); !* Fallback color *!*/
-/*    background-color: rgba(47, 15, 15, 0.4); !* Black w/ opacity *!*/
-/*}*/
 
 /* Modal Content/Box */
 .modal-content {
@@ -150,22 +147,18 @@ button {
     height: 80px;
 }
 
-/*!* The Close Button *!*/
-/*.close {*/
-/*    color: #000000;*/
-/*    left: 170px;*/
-/*    font-size: 28px;*/
-/*    font-weight: bold;*/
-/*}*/
+/* Modal Content/Box */
+.poison-content {
+    /*background-color: #db1a1a;*/
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    /*border: 1px solid #d92323;*/
+    width: 80px; /* Could be more or less, depending on screen size */
+    height: 80px;
+}
 
-/*.close:hover,*/
-/*.close:focus {*/
-/*    color: black;*/
-/*    text-decoration: none;*/
-/*    cursor: pointer;*/
-/*}*/
 
-/* The Modal (background) */
+/* end game cards*/
 .endgame-modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -179,16 +172,3 @@ button {
     background-repeat: no-repeat;
 }
 
-/*    background-color: rgb(206, 30, 30); !* Fallback color *!*/
-/*    background-color: rgba(47, 15, 15, 0.4); !* Black w/ opacity *!*/
-/*}*/
-
-/* Modal Content/Box */
-.poison-content {
-    /*background-color: #db1a1a;*/
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    /*border: 1px solid #d92323;*/
-    width: 80px; /* Could be more or less, depending on screen size */
-    height: 80px;
-}

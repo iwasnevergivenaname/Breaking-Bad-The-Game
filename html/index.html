@@ -11,14 +11,14 @@
 <body>
 <div id="headline"><h1>Can You Break Bad?</h1></div>
 <h5 id="how-to"><a href="how-to.html">how to play</a></h5>
-<button id="start">start</button>
+<!--<button id="start">start</button>-->
 
 <!--         the whole board              -->
 <div class="board">
     <div id="abq">
-        <img id="city" src="../img/layout%20sketch.png" alt="abq" style="width:1500px;height:800px;">
+<!--        <img id="city" src="../img/layout%20sketch.png" alt="abq" style="width:1500px;height:800px;">-->
         <div id="lab">
-            <img src="../img/smaller-transparent-lab.png" alt="lab">
+            <img id="lab-img" src="../img/lab_002.png" alt="lab" style="width:1050px;">
             <!--            items found in lab          -->
             <div class="lab-items" id="hazmat"></div>
             <div class="lab-items" id="notebook"></div>
@@ -34,42 +34,40 @@
     </div>
 </div>
 
-
-<!--    pop up boxes   -->
-<div id="myModal" class="modal">
-    <!-- Modal content -->
+<!-- close up of clickable items -->
+<div id="myModal" class="close-up-modal">
     <div class="modal-content"></div>
 </div>
 
-<!--    pop up boxes   -->
+<div id="hazmat-suit" class="close-up-modal">
+    <img src="../img/hazamtsuitwalt.png" alt="hazmat suit" style="height:400px">
+    <div class="suit-content">
+        <p>this is the hazmat suit</p>
+    </div>
+</div>
+
+<!-- endgame modals -->
 <div id="poison-death" class="endgame-modal">
-    <!-- Modal content -->
     <div class="poison-content">
         <p>you died from explosion</p>
     </div>
 </div>
 
-<!--    pop up boxes   -->
 <div id="success" class="endgame-modal">
-    <!-- Modal content -->
     <div class="success-content">
         <p>you are alive because you put on your suit</p>
     </div>
 </div>
 
-<!--    pop up boxes   -->
 <div id="kill-gus" class="endgame-modal">
-    <!-- Modal content -->
     <div class="kill-gus-content">
         <p>you killed gus</p>
     </div>
 </div>
 
-<!--    pop up boxes   -->
 <div id="no-suit" class="endgame-modal">
-    <!-- Modal content -->
     <div class="no-suit-content">
-        <p>yyou were successful in making product but you have died from not wearing protection</p>
+        <p>you were successful in making product but you have died from not wearing protection</p>
     </div>
 </div>
 

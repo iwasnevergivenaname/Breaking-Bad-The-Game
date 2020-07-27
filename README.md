@@ -5,17 +5,15 @@ Can Walter White produce enough product for Gus Fringe before DEA brother-in-law
 inside of the secret lab, you must use your chemistry skills to cook the finest meth in the ABQ. look around your lab for helpful items.
 
 # things i need to do
-* make a how to play page
+* style how to play page
 * create starting image
 * make start button start game
 * add cellphone element 
 * finish graphics
 * everything clickable that needs to be
 * ai hank
-* walter with costume change
 * close up of objects that have been clicked on
 * gayles notebook
-* walter moves
 * gus message
 * music in background 
 * winning and losing graphics 
