@@ -37,45 +37,64 @@ headline.addEventListener("click", function () {
 });
 hazmatSuit.addEventListener("click", function () {
     isHazmatWorn = true;
-    alert(`you're wearing the hazmat suit`);
+    // alert(`you're wearing the hazmat suit`);
+
+    modal.style.display = "block";
+    console.log("hazmat click");
+
+
 });
 notebook.addEventListener("click", function () {
     isNotebookOpen = true;
     alert(`you found the notebook`);
+    modal.style.display = "block";
+    console.log("hazmat click");
 });
 isoAlc.addEventListener("click", function () {
     isClicked = true;
     alert("isopropyl alcohol");
+    modal.style.display = "block";
+    console.log("hazmat click");
 });
 chemOne.addEventListener("click", function () {
     chem1.isClicked = true;
     chemicalsClicked.push(chem1);
     console.log(chemicalsClicked);
     checkForSafeCombo(chemicalsClicked);
+    modal.style.display = "block";
+    console.log("hazmat click");
 });
 chemTwo.addEventListener("click", function () {
     chem2.isClicked = true;
     chemicalsClicked.push(chem2);
     console.log(chemicalsClicked);
     checkForSafeCombo(chemicalsClicked);
+    modal.style.display = "block";
+    console.log("hazmat click");
 });
 chemThree.addEventListener("click", function () {
     chem3.isClicked = true;
     chemicalsClicked.push(chem3);
     console.log(chemicalsClicked);
     checkForSafeCombo(chemicalsClicked);
+    modal.style.display = "block";
+    console.log("hazmat click");
 });
 chemFour.addEventListener("click", function () {
     chem4.isClicked = true;
     chemicalsClicked.push(chem4);
     console.log(chemicalsClicked);
     checkForSafeCombo(chemicalsClicked);
+    modal.style.display = "block";
+    console.log("hazmat click");
 });
 poison.addEventListener("click", function () {
     isPoisonOpen = true;
     chemicalsClicked.push("poison");
     console.log(chemicalsClicked);
     checkForSafeCombo(chemicalsClicked);
+    modal.style.display = "block";
+    console.log("hazmat click");
 });
 ricin.addEventListener("click", function () {
     isRicin = true;
@@ -83,6 +102,8 @@ ricin.addEventListener("click", function () {
     console.log(chemicalsClicked);
     checkForSafeCombo(chemicalsClicked);
     alert(`you found the ricin`);
+    modal.style.display = "block";
+    console.log("hazmat click");
 })
 
 // check if hazmat is worn, if false, you die
