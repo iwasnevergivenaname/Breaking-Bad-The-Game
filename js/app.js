@@ -16,6 +16,11 @@ const chemThree = document.getElementById("chem-three");
 const chemFour = document.getElementById("chem-four");
 const poison = document.getElementById("poison");
 const ricin = document.getElementById("ricin");
+// endgame notifications
+const poisonEndGame = document.getElementById("poison-death");
+const successfulEndgame = document.getElementById("success");
+const noSuit = document.getElementById("no-suit");
+const killGus = document.getElementById("kill-gus");
 
 // chemical class
 class Chemicals {
@@ -109,9 +114,11 @@ ricin.addEventListener("click", function () {
 // check if hazmat is worn, if false, you die
 function safetyCheck() {
     if (isHazmatWorn) {
-        alert("you have successfully made meth and you're alive");
+        successfulEndgame.style.display = "block";
+        // alert("you have successfully made meth and you're alive");
     } else {
-        alert("you were successful in making product but you have died from not wearing protection");
+        noSuit.style.display = "block";
+        // alert("you were successful in making product but you have died from not wearing protection");
     }
 }
 
@@ -120,11 +127,13 @@ function checkForSafeCombo(...chemicals) {
     for (let i = 0; i < chemicals.length; i++) {
         if (chem1.isClicked && chem2.isClicked && chem3.isClicked && chem4.isClicked && !isPoisonOpen) {
             if (isRicin) {
-                alert("you killed gus fring with ricin!");
+                killGus.style.display = "block";
+                // alert("you killed gus fring with ricin!");
             }
             return safetyCheck();
         } else if (isPoisonOpen) {
-            alert("you exposed a dangerous chemical to air, causing an explosion. you have died");
+            poisonEndGame.style.display = "block";
+            // alert("you exposed a dangerous chemical to air, causing an explosion. you have died");
         } else {
             console.log("still cooking");
         }
@@ -141,23 +150,22 @@ let btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 const close = document.querySelector(".close");
 
-// When the user clicks on the button, open the modal
-btn.addEventListener("click", function(){
-    modal.style.display = "block";
-    console.log("button click");
-});
-
-// When the user clicks on <span> (x), close the modal
-// close.addEventListener("click",  function() {
-//     modal.style.display = "none";
-//     console.log("close");
-// });
 
 // When the user clicks anywhere outside of the modal, close it
 window.addEventListener("click", function(e) {
     if (e.target == modal) {
         modal.style.display = "none";
-        console.log("webpage click to close")
+        console.log("webpage click to close");
+    } else if (e.target == poisonEndGame) {
+        poisonEndGame.style.display = "none";
+    } else if (e.target == successfulEndgame) {
+        successfulEndgame.style.display = "none";
+    } else if (e.target == killGus){
+        killGus.style.display = "none";
+    } else if (e.target == noSuit) {
+        noSuit.style.display = "none";
+    } else {
+        console.log("s;ljbv");
     }
 })
 
