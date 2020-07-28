@@ -10,69 +10,104 @@
 </head>
 <body>
 <main>
-<div id="headline"><h1>Can You Break Bad?</h1></div>
-<h5 id="how-to"><a href="how-to.html">how to play</a></h5>
-<!--<button id="start">start</button>-->
+    <div id="headline"><h1>Can You Break Bad?</h1></div>
+    <h5 id="how-to"><a href="how-to.html">how to play</a></h5>
+    <!--<button id="start">start</button>-->
 
-<!--         the whole board              -->
-<div class="board">
-    <div id="abq">
-<!--        <img id="city" src="../img/layout%20sketch.png" alt="abq" style="width:1500px;height:800px;">-->
-        <div id="lab">
-            <img id="lab-img" src="../img/lab_002.png" alt="lab" style="width:1050px;">
-            <!--            items found in lab          -->
-            <div class="lab-items" id="hazmat"></div>
-            <div class="lab-items" id="notebook"></div>
-            <div class="lab-items" id="isopropyl-alc"></div>
-            <div class="lab-items" id="chem-one"></div>
-            <div class="lab-items" id="chem-two"></div>
-            <div class="lab-items" id="chem-three"></div>
-            <div class="lab-items" id="chem-four"></div>
-            <div class="lab-items" id="poison"></div>
-            <div class="lab-items" id="ricin"></div>
+    <!--         the whole board              -->
+    <div class="board">
+        <div id="abq">
+            <!--        <img id="city" src="../img/layout%20sketch.png" alt="abq" style="width:1500px;height:800px;">-->
+            <div id="lab">
+                <img id="lab-img" src="../img/lab_002.png" alt="lab" style="width:1050px;">
+                <!--            items found in lab          -->
+                <div class="lab-items" id="hazmat"></div>
+                <div class="lab-items" id="notebook"></div>
+                <div class="lab-items" id="isopropyl-alc"></div>
+                <div class="lab-items" id="chem-one"></div>
+                <div class="lab-items" id="chem-two"></div>
+                <div class="lab-items" id="chem-three"></div>
+                <div class="lab-items" id="chem-four"></div>
+                <div class="lab-items" id="poison"></div>
+                <div class="lab-items" id="ricin"></div>
 
+            </div>
         </div>
     </div>
-</div>
 
-<!-- close up of clickable items -->
-<div id="myModal" class="modal">
-    <div class="modal-content"></div>
-</div>
-
-<div id="hazmat-suit" class="close-up-modal">
-<!--    <img src="../img/hazamtsuitwalt.png" alt="hazmat suit" style="height:400px">-->
-    <div class="suit-content">
-        <p>this is the hazmat suit</p>
+<!-- close up images -->
+    <div id="hazmat-suit" class="close-up-modal">
+        <div class="suit-content">
+            <p>this is the hazmat suit</p>
+        </div>
     </div>
-</div>
 
-<!-- endgame modals -->
-<div id="poison-death" class="endgame-modal">
-    <div class="poison-content">
-        <p>you died from explosion</p>
+    <div id="ricin-beans" class="close-up-modal">
+        <div class="bean-content">
+            <p>beans</p>
+        </div>
     </div>
-</div>
 
-<div id="success" class="endgame-modal">
-    <div class="success-content">
-        <p>you are alive because you put on your suit</p>
+    <div id="gale-notebook" class="close-up-modal">
+        <div class="notebook-content">
+            <p>you found gales notebook</p>
+        </div>
     </div>
-</div>
 
-<div id="kill-gus" class="endgame-modal">
-    <div class="kill-gus-content">
-        <p>you killed gus</p>
+    <div id="iso-alc" class="close-up-modal">
+        <div class="iso-alc-content">
+            <p>isopropyl alcohol</p>
+        </div>
     </div>
-</div>
 
-<div id="no-suit" class="endgame-modal">
-    <div class="no-suit-content">
-        <p>you were successful in making product but you have died from not wearing protection</p>
+    <div id="hydrochloride" class="close-up-modal">
+        <div class="hydrochlor-content">
+            <p>hydrochloride</p>
+        </div>
     </div>
-</div>
 
+    <div id="methylamine" class="close-up-modal">
+        <div class="methy-content">
+            <p>methylamine</p>
+        </div>
+    </div>
 
+    <div id="paa" class="close-up-modal">
+        <div class="paa-content">
+            <p>PAA</p>
+        </div>
+    </div>
+
+    <div id="phenlylacetic" class="close-up-modal">
+        <div class="acid-content">
+            <p>phenlylacetic-acid</p>
+        </div>
+    </div>
+
+    <!-- endgame modals -->
+    <div id="poison-death" class="endgame-modal">
+        <div class="poison-content">
+            <p>you died from explosion</p>
+        </div>
+    </div>
+
+    <div id="success" class="endgame-modal">
+        <div class="success-content">
+            <p>you are alive because you put on your suit</p>
+        </div>
+    </div>
+
+    <div id="kill-gus" class="endgame-modal">
+        <div class="kill-gus-content">
+            <p>you killed gus</p>
+        </div>
+    </div>
+
+    <div id="no-suit" class="endgame-modal">
+        <div class="no-suit-content">
+            <p>you were successful in making product but you have died from not wearing protection</p>
+        </div>
+    </div>
 
 
 </main>

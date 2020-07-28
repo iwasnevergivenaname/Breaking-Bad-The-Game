@@ -63,7 +63,7 @@ button {
 }
 
 #hazmat {
-    border: transparent 3px solid;
+    border: chartreuse 3px solid;
     left: 840px;
     top: -500px;
     height: 210px;
@@ -71,7 +71,7 @@ button {
 }
 
 #notebook {
-    border: transparent 3px solid;
+    border: red 3px solid;
     height: 5px;
     width: 40px;
     left: 160px;
@@ -79,7 +79,7 @@ button {
 }
 
 #isopropyl-alc {
-    border: transparent 3px solid;
+    border: aqua 3px solid;
     left: 925px;
     top: -575px;
     height: 60px;
@@ -89,7 +89,7 @@ button {
 #chem-one {
     height: 30px;
     width: 18px;
-    border: transparent 2px solid;
+    border: hotpink 2px solid;
     position: relative;
     left: 405px;
     top: -610px;
@@ -98,13 +98,13 @@ button {
 #chem-two {
     height: 60px;
     width: 63px;
-    border: transparent 2px solid;
+    border: hotpink 2px solid;
     top: -540px;
     left: 368px;
 }
 
 #chem-three {
-    border: transparent 2px solid;
+    border: hotpink 2px solid;
     height: 25px;
     width: 18px;
     top: -690px;
@@ -112,7 +112,7 @@ button {
 }
 
 #chem-four {
-    border: transparent 2px solid;
+    border: hotpink 2px solid;
     height: 25px;
     width: 12px;
     left: 740px;
@@ -120,7 +120,7 @@ button {
 }
 
 #poison {
-    border: transparent 2px solid;
+    border: black 2px solid;
     height: 15px;
     width: 18px;
     left: 123px;
@@ -128,14 +128,13 @@ button {
 }
 
 #ricin {
-    border: transparent 2px solid;
+    border: brown 2px solid;
     height: 10px;
     width: 12px;
     top: -757px;
     left: 481px;
 }
 
-/* modal pop ups */
 .close-up-modal {
     display: none; /* Hidden by default */
     position: absolute; /* Stay in place */
@@ -144,47 +143,117 @@ button {
     top: 500px;
     width: 200px; /* Full width */
     height: 600px; /* Full height */
-    /*overflow: auto; !* Enable scroll if needed *!*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+#gale-notebook {
+    color: white;
+    background-image: url("../img/gale-notebook.jpg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+#iso-alc {
+    color: black;
+    background-image: url("../img/iso-alc.jpg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+#hydrochloride {
+    color: black;
+    background-image: url("../img/hydrochloride.jpg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+#methylamine {
+    color: black;
+    background-image: url("../img/methylamine.jpg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+#paa {
+    color: black;
+    background-image: url("../img/paa.jpeg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+#phenlylacetic {
+    color: black;
+    background-image: url("../img/phenlylacetic-acid.jpg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+#hazmat-suit {
     background-image: url("../img/hazamtsuitwalt.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-/*#hazmat-suit {*/
-/*    !*display: none; !* Hidden by default *!*!*/
-/*    position: fixed; !* Stay in place *!*/
-/*    z-index: 1; !* Sit on top *!*/
-/*    left: 50%;*/
-/*    top: 50%;*/
-/*    width: 10%; !* Full width *!*/
-/*    height: 10%; !* Full height *!*/
-/*    overflow: hidden; !* Enable scroll if needed *!*/
-/*    background-image: url("../img/hazamtsuitwalt.png");*/
-/*    background-repeat: no-repeat;*/
-/*}*/
-
-/* Modal Content/Box */
-.poison-content {
-    /*background-color: #db1a1a;*/
-    /*margin: 15% auto; !* 15% from the top and centered *!*/
-    /*padding: 20px;*/
-    /*!*border: 1px solid #d92323;*!*/
-    /*width: 80px; !* Could be more or less, depending on screen size *!*/
-    /*height: 80px;*/
-}
-
 
 /* end game cards*/
-.endgame-modal {
+#success {
+    color: white;
     display: none; /* Hidden by default */
     position: absolute; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 46%;
+    left: 45%;
     top: 500px;
-    width: 145px; /* Full width */
-    height: 450px; /* Full height */
+    width: 400px; /* Full width */
+    height: 600px;
     /*overflow: auto; !* Enable scroll if needed *!*/
-    background-image: url("../img/phone.png");
+    background-image: url("../img/Bluemeth.png");
     background-repeat: no-repeat;
+    background-size: 90%;
 }
 
+#ricin-beans {
+    color: white;
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 45%;
+    top: 500px;
+    width: 400px; /* Full width */
+    height: 600px;
+    /*overflow: auto; !* Enable scroll if needed *!*/
+    background-image: url("../img/ricin beans.jpg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+#poison-death {
+    color: white;
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 45%;
+    top: 500px;
+    width: 400px; /* Full width */
+    height: 600px;
+    /*overflow: auto; !* Enable scroll if needed *!*/
+    background-image: url("../img/Screen Shot 2020-07-28 at 9.45.03 AM.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+#kill-gus {
+    color: white;
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 45%;
+    top: 500px;
+    width: 400px; /* Full width */
+    height: 600px;
+    /*overflow: auto; !* Enable scroll if needed *!*/
+    background-image: url("../img/4x13_Gus'_face_off.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
