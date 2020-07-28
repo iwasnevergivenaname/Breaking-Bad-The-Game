@@ -116,16 +116,32 @@ ricin.addEventListener("click", function () {
     showModal(ricinBeans);
 });
 
+
+// show or hide pop up modal
+function showModal(modal) {
+        modal.style.display = "block";
+}
+
+function showEndGame(modal) {
+    window.setTimeout(function() {
+        modal.style.display = "block";
+        }, 2000);
+}
+
+function hideModal(modal) {
+    modal.style.display = "none";
+}
+
 // check if right combo of chemicals
 function checkForSafeCombo(...chemicals) {
     for (let i = 0; i < chemicals.length; i++) {
         if (chem1.isClicked && chem2.isClicked && chem3.isClicked && chem4.isClicked && !isPoisonOpen) {
             if (isRicin) {
-                showModal(killGus);
+               showEndGame(killGus);
             }
-            return safetyCheck();
+            setTimeout(safetyCheck, 3000);
         } else if (isPoisonOpen) {
-            showModal(poisonEndGame);
+            showEndGame(poisonEndGame);
         } else {
             console.log("still cooking");
         }
@@ -135,19 +151,10 @@ function checkForSafeCombo(...chemicals) {
 // check if hazmat is worn, if false, you die
 function safetyCheck() {
     if (isHazmatWorn) {
-        showModal(successfulEndgame);
+       showEndGame(successfulEndgame);
     } else {
-        showModal(noSuit);
+        showEndGame(noSuit);
     }
-}
-
-// show or hide pop up modal
-function showModal(modal) {
-    modal.style.display = "block";
-}
-
-function hideModal(modal) {
-    modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
