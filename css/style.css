@@ -63,7 +63,7 @@ button {
 }
 
 #hazmat {
-    border: pink 3px solid;
+    border: transparent 3px solid;
     left: 840px;
     top: -500px;
     height: 210px;
@@ -71,7 +71,7 @@ button {
 }
 
 #notebook {
-    border: pink 3px solid;
+    border: transparent 3px solid;
     height: 5px;
     width: 40px;
     left: 160px;
@@ -79,7 +79,7 @@ button {
 }
 
 #isopropyl-alc {
-    border: pink 3px solid;
+    border: transparent 3px solid;
     left: 925px;
     top: -575px;
     height: 60px;
@@ -89,7 +89,7 @@ button {
 #chem-one {
     height: 30px;
     width: 18px;
-    border: pink 2px solid;
+    border: transparent 2px solid;
     position: relative;
     left: 405px;
     top: -610px;
@@ -98,13 +98,13 @@ button {
 #chem-two {
     height: 60px;
     width: 63px;
-    border: pink 2px solid;
+    border: transparent 2px solid;
     top: -540px;
     left: 368px;
 }
 
 #chem-three {
-    border: pink 2px solid;
+    border: transparent 2px solid;
     height: 25px;
     width: 18px;
     top: -690px;
@@ -112,7 +112,7 @@ button {
 }
 
 #chem-four {
-    border: pink 2px solid;
+    border: transparent 2px solid;
     height: 25px;
     width: 12px;
     left: 740px;
@@ -120,7 +120,7 @@ button {
 }
 
 #poison {
-    border: pink 2px solid;
+    border: transparent 2px solid;
     height: 15px;
     width: 18px;
     left: 123px;
@@ -128,7 +128,7 @@ button {
 }
 
 #ricin {
-    border: pink 2px solid;
+    border: transparent 2px solid;
     height: 10px;
     width: 12px;
     top: -757px;

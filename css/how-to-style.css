@@ -1,6 +1,28 @@
 body {
-
+    background-color: #e3efe3;
+    color: #033603;
 }
+
+.walt-image {
+background-image: url("../img/heisen-colorized.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    color: #043b04;
+    height: 1000px;
+    width: 100%;
+    margin-top: -200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.how-to {
+    margin: 200px 400px;
+    top: -200px;
+}
+
 
 .btn {
     height: 550px;
@@ -8,5 +30,7 @@ body {
 }
 
 .home-btn {
-    color: chartreuse;
+    color: #172b03;
+    position: fixed;
+    bottom: 0;
 }

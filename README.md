@@ -7,7 +7,6 @@ inside of the secret lab, you must use your chemistry skills to cook the finest 
 # things i need to do
 * clean up phone png
 * reorganize code (dry)
-* style how to play page
 * create starting image
 * make start button start game
 * add cellphone element 
@@ -15,7 +14,7 @@ inside of the secret lab, you must use your chemistry skills to cook the finest 
 * everything clickable that needs to be
 * ai hank
 * close up of objects that have been clicked on
-* gayles notebook
+* gales notebook
 * gus message
 * music in background 
 * winning and losing graphics 
