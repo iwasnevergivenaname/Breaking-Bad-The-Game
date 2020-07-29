@@ -119,13 +119,13 @@ ricin.addEventListener("click", function () {
 
 // show or hide pop up modal
 function showModal(modal) {
-        modal.style.display = "block";
+    modal.style.display = "block";
 }
 
 function showEndGame(modal) {
     window.setTimeout(function() {
         modal.style.display = "block";
-        }, 2000);
+    }, 1000);
 }
 
 function hideModal(modal) {
@@ -137,9 +137,9 @@ function checkForSafeCombo(...chemicals) {
     for (let i = 0; i < chemicals.length; i++) {
         if (chem1.isClicked && chem2.isClicked && chem3.isClicked && chem4.isClicked && !isPoisonOpen) {
             if (isRicin) {
-               showEndGame(killGus);
+                showEndGame(killGus);
             }
-            setTimeout(safetyCheck, 3000);
+            setTimeout(safetyCheck, 2000);
         } else if (isPoisonOpen) {
             showEndGame(poisonEndGame);
         } else {
@@ -151,7 +151,7 @@ function checkForSafeCombo(...chemicals) {
 // check if hazmat is worn, if false, you die
 function safetyCheck() {
     if (isHazmatWorn) {
-       showEndGame(successfulEndgame);
+        showEndGame(successfulEndgame);
     } else {
         showEndGame(noSuit);
     }
