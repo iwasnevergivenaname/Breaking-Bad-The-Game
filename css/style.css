@@ -116,6 +116,12 @@ button {
     top: 0px;
 }
 
+/*#gallon {*/
+/*    border: chartreuse 2px solid;*/
+/*    height: 200px;*/
+/*    width: 150px;*/
+/*}*/
+
 #poison {
     position: relative;
     border: black 2px solid;
@@ -175,9 +181,16 @@ button {
     background-size: 90%;
 }
 
+/*#gallon-can {*/
+/*    color: black;*/
+/*    background-image: url("../img/galloncan.png");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: 90%;*/
+/*}*/
+
 #paa {
     color: black;
-    background-image: url("../img/paa.jpeg");
+    background-image: url("../img/paa.png");
     background-repeat: no-repeat;
     background-size: 90%;
 }
@@ -275,7 +288,7 @@ button {
     transform: translate(-50%, -50%);
     width: 400px; /* Full width */
     height: 600px;
-    background-image: url("../img/hank.png");
+    background-image: url("../img/keep cooking.png");
     background-repeat: no-repeat;
     background-size: 90%;
 }

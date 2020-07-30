@@ -26,6 +26,7 @@ const chemThree = document.getElementById("chem-three");
 const chemFour = document.getElementById("chem-four");
 const poison = document.getElementById("poison");
 const ricin = document.getElementById("ricin");
+// const gallon = document.getElementById("gallon");
 // closeup of items
 const modal = document.getElementById("myModal");
 const suitModal = document.getElementById("hazmat-suit");
@@ -36,6 +37,7 @@ const hydrochloride = document.getElementById("hydrochloride");
 const methylamine = document.getElementById("methylamine");
 const paa = document.getElementById("paa");
 const phenlylacetic = document.getElementById("phenlylacetic");
+// const gallonCan = document.getElementById("gallon-can");
 // endgame notifications
 const poisonEndGame = document.getElementById("poison-death");
 const successfulEndgame = document.getElementById("successful-product");
@@ -70,6 +72,10 @@ hazmatSuit.addEventListener("click", function () {
     showModal(suitModal);
 });
 
+// gallonCan.addEventListener("click", function() {
+//     console.log("clicked galloncan");
+//     showModal(gallonCan)
+// })
 
 notebook.addEventListener("click", function () {
     isNotebookOpen = true;
@@ -165,52 +171,8 @@ function checkForSafeCombo(chemicals) {
         console.log("there should be more chemicals");
         showEndGame(incomplete);
 
-        //     showEndGame(incomplete);
-        //     console.log("need more chemicals to start cooking");
-        // } else if ("chem1" && "chem2" && "chem3" && "chem4" && !isHazmatWorn && !isRicin) {
-        //     showEndGame(dead);
-        // } else if ("chem1" && "chem2" && "chem3" && "chem4" && isHazmatWorn && !isRicin) {
-        //     showEndGame(successfulEndgame);
-        // } else if ("chem1" && "chem2" && "chem3" && "chem4" && isHazmatWorn && isRicin) {
-        //     showEndGame(killer);
-        // } else if ("chem1" && "chem2" && "chem3" && "chem4" && !isHazmatWorn && isRicin) {
-        //     showEndGame(doubleDeath);
-        // } else {
-        //     console.log("shrug guy")
-        // }
     }
 }
-
-
-// function checkForSafeCombo(chemicals) {
-//     for (let i = 0; i < chemicals.length; i++) {
-//         if (chemicals[i] !== "chem1" || chemicals[i] !=="chem2" || chemicals[i] !=="chem3" || chemicals[i] !=="chem4") {
-//             showEndGame(incomplete);
-//             console.log("need more chemicals to start cooking");
-//         } else if ("chem1" && "chem2" && "chem3" && "chem4" && !isHazmatWorn && !isRicin) {
-//             showEndGame(dead);
-//         } else if ("chem1" && "chem2" && "chem3" && "chem4" && isHazmatWorn && !isRicin) {
-//             showEndGame(successfulEndgame);
-//         } else if ("chem1" && "chem2" && "chem3" && "chem4" && isHazmatWorn && isRicin) {
-//             showEndGame(killer);
-//         } else if ("chem1" && "chem2" && "chem3" && "chem4" && !isHazmatWorn && isRicin) {
-//             showEndGame(doubleDeath);
-//         } else {
-//             console.log("shrug guy")
-//         }
-//     }
-// }
-
-// check if hazmat is worn, if false, you die
-// function safetyCheck() {
-//     if (isHazmatWorn) {
-//         console.log("safety check good");
-//         showEndGame(killGus);
-//     } else {
-//         console.log("safety check bad");
-//         showEndGame(noSuit);
-//     }
-// }
 
 // When the user clicks anywhere outside of the modal, close it
 window.addEventListener("click", function (e) {
@@ -263,6 +225,9 @@ window.addEventListener("click", function (e) {
         case doubleDeath:
             hideModal(doubleDeath);
             break;
+        // case gallonCan:
+        //     hideModal(gallonCan);
+        //     break;
         default:
             console.log("not working");
     }
