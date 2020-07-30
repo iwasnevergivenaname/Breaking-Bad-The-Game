@@ -12,19 +12,20 @@
 <main>
     <div id="headline"><h1>Can You Break Bad?</h1></div>
     <h5 id="how-to"><a href="how-to.html">how to play</a></h5>
+    <button>restart game</button>
     <!--<button id="start">start</button>-->
 
     <!--         the whole board              -->
     <div class="board">
-        <div id="abq">
-<!--            <canvas height="300px" width="1000px"></canvas>-->
-            <div id="bus-stop"></div>
-            <div id="white-house"></div>
-            <div id="chicken-bros"></div>
-            <div id="carwash"></div>
-            <div id="saul"></div>
-            <div id="lab">
-                <img id="lab-img" src="../img/lab_002.png" alt="lab" style="width:1050px;">
+<!--        <div id="abq">-->
+<!--&lt;!&ndash;            <canvas height="300px" width="1000px"></canvas>&ndash;&gt;-->
+<!--            <div id="bus-stop"></div>-->
+<!--            <div id="white-house"></div>-->
+<!--            <div id="chicken-bros"></div>-->
+<!--            <div id="carwash"></div>-->
+<!--            <div id="saul"></div>-->
+<!--            <div id="lab">-->
+<!--                <img id="lab-img" src="../img/lab_002.png" alt="lab" style="width:1050px;">-->
                 <!--            items found in lab          -->
                 <div class="lab-items" id="hazmat"></div>
                 <div class="lab-items" id="notebook"></div>
@@ -36,9 +37,11 @@
                 <div class="lab-items" id="poison"></div>
                 <div class="lab-items" id="ricin"></div>
 
-            </div>
-        </div>
+<!--            </div>-->
+<!--        </div>-->
     </div>
+
+    <button id="cook">start cooking</button>
 
 <!-- close up images -->
     <div id="hazmat-suit" class="close-up-modal">
@@ -96,21 +99,33 @@
         </div>
     </div>
 
-    <div id="success" class="endgame-modal">
-        <div class="success-content">
-            <p>you were successful in making product and got it to gus on time</p>
+    <div id="incomplete-batch" class="endgame-modal">
+        <div class="batch-content">
+            <p>you need to add more chemicals</p>
         </div>
     </div>
 
-    <div id="kill-gus" class="endgame-modal">
-        <div class="kill-gus-content">
+    <div id="successful-product" class="endgame-modal">
+        <div class="successful-content">
+            <p>you were made meth and stayed alive with your hazmat suit</p>
+        </div>
+    </div>
+
+    <div id="killer-product" class="endgame-modal">
+        <div class="kill-content">
             <p>you killed gus and you're alive from wearing your suit</p>
         </div>
     </div>
 
-    <div id="no-suit" class="endgame-modal">
-        <div class="no-suit-content">
+    <div id="double-killer-product" class="endgame-modal">
+        <div class="ricin-no-suit-content">
             <p>you killed gus from ricin and yourself from no suit</p>
+        </div>
+    </div>
+
+    <div id="dead-product" class="endgame-modal">
+        <div class="dead-content">
+            <p>you forgot to put on your suit</p>
         </div>
     </div>
 
