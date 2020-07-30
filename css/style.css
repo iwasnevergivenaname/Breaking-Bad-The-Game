@@ -159,7 +159,7 @@ button {
 
 #iso-alc {
     color: black;
-    background-image: url("../img/iso-alc.jpg");
+    background-image: url("../img/isso.png");
     background-repeat: no-repeat;
     background-size: 90%;
 }
@@ -210,7 +210,7 @@ button {
     width: 400px; /* Full width */
     height: 600px;
     /*overflow: auto; !* Enable scroll if needed *!*/
-    background-image: url("../img/Bluemeth.png");
+    background-image: url("../img/crystal-blue.png");
     background-repeat: no-repeat;
     background-size: 90%;
 }
@@ -225,7 +225,7 @@ button {
     width: 400px; /* Full width */
     height: 600px;
     /*overflow: auto; !* Enable scroll if needed *!*/
-    background-image: url("../img/ricin beans.jpg");
+    background-image: url("../img/ricin beans.png");
     background-repeat: no-repeat;
     background-size: 90%;
 }
