@@ -44,7 +44,7 @@ button {
     height: 800px;
     margin: 0 auto;
     border: #262626 1px solid;
-    background-image: url("../img/lab_002.png");
+    background-image: url("../img/updated lab.png");
     background-size: cover;
     /*background-color: white;*/
     background-color: rgba(255, 248, 248, 0.78)
@@ -58,7 +58,7 @@ button {
 
 #hazmat {
     position: relative;
-    border: chartreuse 3px solid;
+    border: transparent 3px solid;
     left: 1450px;
     top: 100px;
     height: 210px;
@@ -76,7 +76,7 @@ button {
 
 #isopropyl-alc {
     position: relative;
-    border: aqua 3px solid;
+    border: transparent 3px solid;
     left: 1600px;
     top: 120px;
     height: 60px;
@@ -130,7 +130,7 @@ button {
 
 #ricin {
     position: relative;
-    border: saddlebrown 2px solid;
+    border: transparent 2px solid;
     height: 10px;
     width: 12px;
     left: 840px;
