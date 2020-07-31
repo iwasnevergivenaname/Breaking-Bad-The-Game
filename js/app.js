@@ -1,19 +1,26 @@
-const btn = document.querySelector("button");
-btn.addEventListener("click", function () {
-    location.reload(true);
-});
-
-const cookBtn = document.getElementById("cook");
-cookBtn.addEventListener("click", function () {
-    checkForSafeCombo(chemicalsClicked);
-})
-
 // checks for used items
 let isHazmatWorn = false;
 let isNotebookOpen = false;
 let isPoisonOpen = false;
 let isRicin = false;
 let chemicalsClicked = [];
+
+
+//i know i could have organized this way better and utilized my chemical class more but i kept breaking checks
+// and i didn't give myself the time to thoroughly condense my JS code.
+// chemical class
+class Chemicals {
+    constructor(name, isClicked) {
+        this.name = name;
+        this.isClicked = false;
+    }
+}
+
+// individual chemicals
+let chem1 = new Chemicals("chemical one");
+let chem2 = new Chemicals("chemical two");
+let chem3 = new Chemicals("chemical three");
+let chem4 = new Chemicals("chemical four");
 
 // connecting elements from the HTML to JS variables
 const headline = document.getElementById("headline");
@@ -31,7 +38,6 @@ const poison = document.getElementById("poison");
 const ricin = document.getElementById("ricin");
 const gallonCan = document.getElementById("gallon-can");
 const cellphone = document.getElementById("cellphone");
-
 // closeup of items
 const modal = document.getElementById("myModal");
 const suitModal = document.getElementById("hazmat-suit");
@@ -45,7 +51,6 @@ const phenlylacetic = document.getElementById("phenlylacetic");
 const fakeChem = document.getElementById("fake-chem");
 const gallonModal = document.getElementById("tin-gallon-can");
 const cellphoneModal = document.getElementById("cellphone-close-up");
-// const gallonCan = document.getElementById("gallon-can");
 // endgame notifications
 const poisonEndGame = document.getElementById("poison-death");
 const successfulEndgame = document.getElementById("successful-product");
@@ -55,20 +60,16 @@ const incomplete = document.getElementById("incomplete-batch");
 const dead = document.getElementById("dead-product");
 const doubleDeath = document.getElementById("double-killer-product");
 
-// chemical class
-class Chemicals {
-    constructor(name, isClicked) {
-        this.name = name;
-        this.isClicked = false;
-    }
-}
+// buttons
+const btn = document.querySelector("button");
+btn.addEventListener("click", function () {
+    location.reload(true);
+});
 
-// individual chemicals
-let chem1 = new Chemicals("chemical one");
-let chem2 = new Chemicals("chemical two");
-let chem3 = new Chemicals("chemical three");
-let chem4 = new Chemicals("chemical four");
-
+const cookBtn = document.getElementById("cook");
+cookBtn.addEventListener("click", function () {
+    checkForSafeCombo(chemicalsClicked);
+})
 
 // connecting my DOM elements to click functions
 headline.addEventListener("click", function () {
@@ -79,11 +80,6 @@ hazmatSuit.addEventListener("click", function () {
     isHazmatWorn = true;
     showModal(suitModal);
 });
-
-// gallonCan.addEventListener("click", function() {
-//     console.log("clicked galloncan");
-//     showModal(gallonCan)
-// })
 
 notebook.addEventListener("click", function () {
     isNotebookOpen = true;
@@ -163,12 +159,14 @@ function showModal(modal) {
     modal.style.display = "block";
 }
 
+// endgame modal takes 1 second to display so it doesn't feel rushed
 function showEndGame(modal) {
     window.setTimeout(function () {
         modal.style.display = "block";
     }, 1000);
 }
 
+// just clicking on the modal will make it go away
 function hideModal(modal) {
     modal.style.display = "none";
 }
@@ -176,20 +174,24 @@ function hideModal(modal) {
 
 // // check if right combo of chemicals
 function checkForSafeCombo(chemicals) {
-    // chemicalsClicked;
+    // there are 4 correct chemicals, any less added and it cannot be a complete set
     if (chemicals.length < 4) {
         showModal(incomplete);
     } else if (chemicals.length > 3) {
-        // return results;
+        // these are the four correct chemicals
         if (chemicals.includes("chem1", "chem2", "chem3", "chem4")) {
             console.log(chemicals);
             console.log("you have them all");
+            // correct chem but no suit = dead
             if (!isHazmatWorn && !isRicin) {
                 showEndGame(dead);
+            //    suit worn OK
             } else if (isHazmatWorn && !isRicin) {
                 showEndGame(successfulEndgame);
+            //    suit worn and poisoned gus, best outcome
             } else if (isHazmatWorn && isRicin) {
                 showEndGame(killer);
+            //     no suit, dead
             } else if (!isHazmatWorn && isRicin) {
                 showEndGame(doubleDeath);
             } else {
