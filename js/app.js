@@ -24,9 +24,14 @@ const chemOne = document.getElementById("chem-one");
 const chemTwo = document.getElementById("chem-two");
 const chemThree = document.getElementById("chem-three");
 const chemFour = document.getElementById("chem-four");
+const chemFive = document.getElementById("chem-five");
+const chemSix = document.getElementById("chem-six");
+const chemSeven = document.getElementById("chem-seven");
 const poison = document.getElementById("poison");
 const ricin = document.getElementById("ricin");
-// const gallon = document.getElementById("gallon");
+const gallonCan = document.getElementById("gallon-can");
+const cellphone = document.getElementById("cellphone");
+
 // closeup of items
 const modal = document.getElementById("myModal");
 const suitModal = document.getElementById("hazmat-suit");
@@ -37,6 +42,9 @@ const hydrochloride = document.getElementById("hydrochloride");
 const methylamine = document.getElementById("methylamine");
 const paa = document.getElementById("paa");
 const phenlylacetic = document.getElementById("phenlylacetic");
+const fakeChem = document.getElementById("fake-chem");
+const gallonModal = document.getElementById("tin-gallon-can");
+const cellphoneModal = document.getElementById("cellphone-close-up");
 // const gallonCan = document.getElementById("gallon-can");
 // endgame notifications
 const poisonEndGame = document.getElementById("poison-death");
@@ -115,6 +123,26 @@ chemFour.addEventListener("click", function () {
     showModal(phenlylacetic);
 });
 
+chemFive.addEventListener("click", function () {
+    showModal(fakeChem);
+});
+
+chemSix.addEventListener("click", function () {
+    showModal(fakeChem);
+});
+
+chemSeven.addEventListener("click", function () {
+    showModal(fakeChem);
+});
+
+cellphone.addEventListener("click", function () {
+showModal(cellphoneModal);
+});
+
+gallonCan.addEventListener("click", function () {
+    showModal(gallonModal);
+});
+
 poison.addEventListener("click", function () {
     isPoisonOpen = true;
     chemicalsClicked.push("poison");
@@ -149,12 +177,13 @@ function hideModal(modal) {
 // // check if right combo of chemicals
 function checkForSafeCombo(chemicals) {
     let results = [];
-    for (let i = 0; i < chemicals.length; i++) {
-        results.push(chemicals[i]);
-        console.log(results)
+    // chemicalsClicked;
+    if (chemicals.length < 5) {
+        showModal(incomplete);
     }
     // return results;
     if (results.includes("chem1", "chem2", "chem3", "chem4")) {
+        console.log(results);
         console.log("you have them all");
         if (!isHazmatWorn && !isRicin) {
             showEndGame(dead);
@@ -225,9 +254,15 @@ window.addEventListener("click", function (e) {
         case doubleDeath:
             hideModal(doubleDeath);
             break;
-        // case gallonCan:
-        //     hideModal(gallonCan);
-        //     break;
+        case fakeChem:
+            hideModal(fakeChem);
+            break;
+        case gallonModal:
+            hideModal(gallonModal);
+            break;
+        case cellphoneModal:
+            hideModal(cellphoneModal);
+            break;
         default:
             console.log("not working");
     }

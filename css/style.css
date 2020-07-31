@@ -55,47 +55,46 @@ button {
 
 #hazmat {
     position: relative;
-    border: transparent 3px solid;
+    border: chartreuse 3px solid;
     left: 1450px;
     top: 100px;
-    height: 210px;
-    width: 80px;
+    height: 310px;
+    width: 130px;
 }
 
 #notebook {
     position: relative;
-    border: transparent 3px solid;
+    border: red 3px solid;
     height: 5px;
     width: 40px;
     left: 329px;
-    top: 255px;
+    top: 157px;
 }
 
 #isopropyl-alc {
     position: relative;
-    border: transparent 3px solid;
+    border: aqua 3px solid;
     left: 1600px;
-    top: 120px;
-    height: 60px;
-    width: 25px;
+    height: 120px;
+    width: 40px;
 }
 
 #chem-one {
     position: relative;
-    height: 30px;
-    width: 18px;
+    height: 70px;
+    width: 30px;
     border: deeppink 2px solid;
-    left: 0px;
-    top: 0px;
+    left: 1565px;
+    top: -30px;
 }
 
 #chem-two {
     position: relative;
-    height: 60px;
-    width: 63px;
+    height: 25px;
+    width: 13px;
     border: deeppink 2px solid;
-    left: 600px;
-    top: 200px;
+    left: 1260px;
+    top: -310px;
 }
 
 #chem-three {
@@ -104,63 +103,99 @@ button {
     height: 30px;
     width: 15px;
     left: 372px;
-    top: 55px;
+    top: -107px;
 }
 
 #chem-four {
     position: relative;
     border: deeppink 2px solid;
-    height: 25px;
-    width: 12px;
-    left: 0px;
-    top: 0px;
+    height: 90px;
+    width: 50px;
+    left: 1208px;
+    top: -28px;
 }
 
-/*#gallon {*/
-/*    border: chartreuse 2px solid;*/
-/*    height: 200px;*/
-/*    width: 150px;*/
-/*}*/
+#chem-five {
+    position: relative;
+    border: deeppink 2px solid;
+    height: 70px;
+    width: 30px;
+    left: 752px;
+    top: -350px;
+}
+
+#chem-six {
+    position: relative;
+    border: deeppink 2px solid;
+    height: 70px;
+    width: 30px;
+    left: 199px;
+    top: -400px;
+}
+
+#chem-seven {
+    position: relative;
+    border: deeppink 2px solid;
+    height: 45px;
+    width: 30px;
+    left: 1267px;
+    top: -580px;
+}
 
 #poison {
     position: relative;
-    border: transparent 2px solid;
+    border: black 2px solid;
     height: 30px;
     width: 33px;
     left: 230px;
-    top: 0px;
+    top: -230px;
+}
+
+#cellphone {
+    position: relative;
+    border: black 2px solid;
+    height: 15px;
+    width: 40px;
+    left: 618px;
+    top: -600px;
 }
 
 #ricin {
     position: relative;
-    border: transparent 2px solid;
+    border: brown 2px solid;
     height: 10px;
     width: 32px;
     left: 140px;
-    top: 125px;
+    top: -105px;
+}
+
+#gallon-can {
+    position: relative;
+    border: dimgrey 2px solid;
+    height: 100px;
+    width: 80px;
+    left: 1318px;
+    top: -380px;
 }
 
 .close-up-modal {
     display: none; /* Hidden by default */
     position: absolute; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 44%;
-    top: 500px;
-    width: 200px; /* Full width */
-    height: 600px; /* Full height */
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 
 #gale-notebook {
-    color: white;
+    color: black;
     background-image: url("../img/labnotes1.png");
     background-repeat: no-repeat;
     background-size: 90%;
-    width: 600px;
-    height: 300px;
+    width: 800px;
+    height: 500px;
     left: 50%;
+    top: 500px;
     transform: translate(-50%, -50%);
 }
 
@@ -169,6 +204,38 @@ button {
     background-image: url("../img/isso.png");
     background-repeat: no-repeat;
     background-size: 90%;
+    width: 400px;
+    height: 500px;
+    left: 50%;
+    bottom: 250px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
+
+#tin-gallon-can {
+    color: black;
+    background-image: url("../img/galloncan.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    width: 600px;
+    height: 700px;
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
+
+#fake-chem {
+    color: black;
+    background-image: url("../img/Screen Shot 2020-07-28 at 10.12.25 AM.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    width: 600px;
+    height: 700px;
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
 }
 
 #hydrochloride {
@@ -176,6 +243,12 @@ button {
     background-image: url("../img/hydrochloride.png");
     background-repeat: no-repeat;
     background-size: 90%;
+    width: 500px;
+    height: 600px;
+    left: 50%;
+    top: 40%;
+    position: fixed;
+    transform: translate(-50%, -50%);
 }
 
 #methylamine {
@@ -183,7 +256,15 @@ button {
     background-image: url("../img/methylamine.png");
     background-repeat: no-repeat;
     background-size: 90%;
+    width: 450px;
+    height: 550px;
+    left: 55%;
+    top: 40%;
+    position: fixed;
+    transform: translate(-50%, -50%);
 }
+
+
 
 /*#gallon-can {*/
 /*    color: black;*/
@@ -197,9 +278,25 @@ button {
     background-image: url("../img/paa.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 250px;
-    height: 500px;
-    /*left: 50%;*/
+    width: 450px;
+    height: 550px;
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
+
+#cellphone-close-up {
+    color: black;
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 200px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
 }
 
 #phenlylacetic {
@@ -207,12 +304,19 @@ button {
     background-image: url("../img/phenlylacetic-acid.png");
     background-repeat: no-repeat;
     background-size: 90%;
+    width: 450px;
+    height: 550px;
+    left: 50%;
+    top: 40%;
+    position: fixed;
+    transform: translate(-50%, -50%);
 }
 
 #hazmat-suit {
-    font-size: 150%;
-    height: 700px;
-    width: auto;
+    /*font-size: 150%;*/
+    z-index: 1;
+    height: 800px;
+    width: 350px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -232,11 +336,11 @@ button {
     background-repeat: no-repeat;
     background-size: 100%;
     font-size: 150%;
-    height: 450px;
-    width: 400px;
+    height: 700px;
+    width: 600px;
     position: fixed;
-    top: 50%;
     left: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
 }
 
@@ -248,8 +352,8 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px; /* Full width */
-    height: 600px;
+    width: 600px; /* Full width */
+    height: 800px;
     background-image: url("../img/ricin beans.png");
     background-repeat: no-repeat;
     background-size: 90%;
@@ -263,8 +367,8 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 700px; /* Full width */
-    height: 700px;
+    width: 900px; /* Full width */
+    height: 900px;
     background-image: url("../img/bomb-explosion-mushroom-cloud-by-hand-drawing_28952-186.png");
     background-repeat: no-repeat;
     background-size: 90%;
@@ -293,8 +397,8 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px; /* Full width */
-    height: 600px;
+    width: 700px; /* Full width */
+    height: 900px;
     background-image: url("../img/keep cooking.png");
     background-repeat: no-repeat;
     background-size: 90%;
