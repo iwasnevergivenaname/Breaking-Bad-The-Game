@@ -136,7 +136,7 @@ chemSeven.addEventListener("click", function () {
 });
 
 cellphone.addEventListener("click", function () {
-showModal(cellphoneModal);
+    showModal(cellphoneModal);
 });
 
 gallonCan.addEventListener("click", function () {
@@ -176,30 +176,31 @@ function hideModal(modal) {
 
 // // check if right combo of chemicals
 function checkForSafeCombo(chemicals) {
-    let results = [];
     // chemicalsClicked;
-    if (chemicals.length < 5) {
+    if (chemicals.length < 4) {
         showModal(incomplete);
-    }
-    // return results;
-    if (results.includes("chem1", "chem2", "chem3", "chem4")) {
-        console.log(results);
-        console.log("you have them all");
-        if (!isHazmatWorn && !isRicin) {
-            showEndGame(dead);
-        } else if (isHazmatWorn && !isRicin) {
-            showEndGame(successfulEndgame);
-        } else if (isHazmatWorn && isRicin) {
-            showEndGame(killer);
-        } else if (!isHazmatWorn && isRicin) {
-            showEndGame(doubleDeath);
+    } else if (chemicals.length > 3) {
+        // return results;
+        if (chemicals.includes("chem1", "chem2", "chem3", "chem4")) {
+            console.log(chemicals);
+            console.log("you have them all");
+            if (!isHazmatWorn && !isRicin) {
+                showEndGame(dead);
+            } else if (isHazmatWorn && !isRicin) {
+                showEndGame(successfulEndgame);
+            } else if (isHazmatWorn && isRicin) {
+                showEndGame(killer);
+            } else if (!isHazmatWorn && isRicin) {
+                showEndGame(doubleDeath);
+            } else {
+                console.log("hm this is coming from the chemical check");
+            }
         } else {
-            console.log("hm this is coming from the chemical check");
+            console.log("there should be more chemicals");
+            showEndGame(incomplete);
         }
     } else {
-        console.log("there should be more chemicals");
-        showEndGame(incomplete);
-
+        console.log("outside of else if length check")
     }
 }
 

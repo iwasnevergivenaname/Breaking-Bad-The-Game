@@ -201,7 +201,7 @@ button {
 
 #iso-alc {
     color: black;
-    background-image: url("../img/isso.png");
+    background-image: url("../img/isso-second.png");
     background-repeat: no-repeat;
     background-size: 90%;
     width: 400px;
@@ -321,7 +321,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("../img/hazamtsuitwalt.png");
+    background-image: url("../img/cleaned-up-hazmat.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -369,7 +369,7 @@ button {
     transform: translate(-50%, -50%);
     width: 900px; /* Full width */
     height: 900px;
-    background-image: url("../img/bomb-explosion-mushroom-cloud-by-hand-drawing_28952-186.png");
+    background-image: url("../img/explosion-with-text.png");
     background-repeat: no-repeat;
     background-size: 90%;
 }
@@ -399,7 +399,7 @@ button {
     transform: translate(-50%, -50%);
     width: 700px; /* Full width */
     height: 900px;
-    background-image: url("../img/keep cooking.png");
+    background-image: url("../img/incomplete-formula.png");
     background-repeat: no-repeat;
     background-size: 90%;
 }
