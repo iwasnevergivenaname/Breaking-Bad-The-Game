@@ -288,7 +288,7 @@ button {
 
 #cellphone-close-up {
     color: black;
-    background-image: url("../img/phone.png");
+    background-image: url("../img/phone-with-text.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 200px;
@@ -332,7 +332,7 @@ button {
     color: black;
     display: none;
     z-index: 1;
-    background-image: url("../img/crystal-blue.png");
+    background-image: url("../img/meth-and-text.png");
     background-repeat: no-repeat;
     background-size: 100%;
     font-size: 150%;
@@ -354,7 +354,7 @@ button {
     transform: translate(-50%, -50%);
     width: 600px; /* Full width */
     height: 800px;
-    background-image: url("../img/ricin beans.png");
+    background-image: url("../img/ricin-poison.png");
     background-repeat: no-repeat;
     background-size: 90%;
 }
