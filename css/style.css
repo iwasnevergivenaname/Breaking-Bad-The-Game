@@ -64,11 +64,11 @@ button {
 
 #notebook {
     position: relative;
-    border: red 3px solid;
+    border: transparent 3px solid;
     height: 5px;
     width: 40px;
-    left: 300px;
-    top: 250px;
+    left: 329px;
+    top: 255px;
 }
 
 #isopropyl-alc {
@@ -100,11 +100,11 @@ button {
 
 #chem-three {
     position: relative;
-    border: deeppink 2px solid;
-    height: 25px;
-    width: 18px;
-    left: 0px;
-    top: 0px;
+    border: hotpink 2px solid;
+    height: 30px;
+    width: 15px;
+    left: 372px;
+    top: 55px;
 }
 
 #chem-four {
@@ -124,10 +124,10 @@ button {
 
 #poison {
     position: relative;
-    border: black 2px solid;
-    height: 15px;
-    width: 18px;
-    left: 250px;
+    border: transparent 2px solid;
+    height: 30px;
+    width: 33px;
+    left: 230px;
     top: 0px;
 }
 
@@ -135,9 +135,9 @@ button {
     position: relative;
     border: transparent 2px solid;
     height: 10px;
-    width: 12px;
-    left: 840px;
-    top: -50px;
+    width: 32px;
+    left: 140px;
+    top: 125px;
 }
 
 .close-up-modal {
@@ -155,9 +155,13 @@ button {
 
 #gale-notebook {
     color: white;
-    background-image: url("../img/gale-notebook.jpg");
+    background-image: url("../img/labnotes1.png");
     background-repeat: no-repeat;
     background-size: 90%;
+    width: 600px;
+    height: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #iso-alc {
@@ -169,14 +173,14 @@ button {
 
 #hydrochloride {
     color: black;
-    background-image: url("../img/hydrochloride.jpg");
+    background-image: url("../img/hydrochloride.png");
     background-repeat: no-repeat;
     background-size: 90%;
 }
 
 #methylamine {
     color: black;
-    background-image: url("../img/methylamine.jpg");
+    background-image: url("../img/methylamine.png");
     background-repeat: no-repeat;
     background-size: 90%;
 }
@@ -192,12 +196,15 @@ button {
     color: black;
     background-image: url("../img/paa.png");
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 100%;
+    width: 250px;
+    height: 500px;
+    /*left: 50%;*/
 }
 
 #phenlylacetic {
     color: black;
-    background-image: url("../img/phenlylacetic-acid.jpg");
+    background-image: url("../img/phenlylacetic-acid.png");
     background-repeat: no-repeat;
     background-size: 90%;
 }
@@ -256,9 +263,9 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px; /* Full width */
-    height: 600px;
-    background-image: url("../img/Screen Shot 2020-07-28 at 9.45.03 AM.png");
+    width: 700px; /* Full width */
+    height: 700px;
+    background-image: url("../img/bomb-explosion-mushroom-cloud-by-hand-drawing_28952-186.png");
     background-repeat: no-repeat;
     background-size: 90%;
 }
